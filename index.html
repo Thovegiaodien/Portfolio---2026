@@ -507,8 +507,28 @@ body.editing .edit-hint{display:block}
         <div class="tags"><span class="tag">Banking</span><span class="tag">Onboarding · eKYC</span><span class="tag">Mobile App</span></div>
         <span class="arrow">↗</span>
       </div>
-      <div class="work-item reveal">
+      <div class="work-item has-study reveal" data-study="merchant" role="button" tabindex="0" aria-label="Xem case study Merchant ABBank">
         <span class="idx">04</span>
+        <div>
+          <div class="title" data-key="w5_title">Merchant – ABBank</div>
+          <div class="desc" data-key="w5_desc">Thiết kế luồng Merchant cho ứng dụng ABBank — giúp hộ kinh doanh tự đăng ký và quản lý thông tin ngay trong app. Case study tập trung vào luồng đăng ký hộ kinh doanh cho khách hàng có căn cước công dân.</div>
+          <span class="cta" data-key="w5_cta">Xem case study →</span>
+        </div>
+        <div class="tags"><span class="tag">Banking</span><span class="tag">Merchant · Hộ KD</span><span class="tag">Mobile App</span></div>
+        <span class="arrow">↗</span>
+      </div>
+      <div class="work-item has-study reveal" data-study="greenland" role="button" tabindex="0" aria-label="Xem case study game Greenland">
+        <span class="idx">05</span>
+        <div>
+          <div class="title" data-key="w6_title">Greenland — Game nông trại &amp; đánh quái</div>
+          <div class="desc" data-key="w6_desc">Game nông trại kết hợp đánh quái, với toàn bộ hình ảnh trong game — nhân vật, cây trồng, vật phẩm, quái vật và bối cảnh — được tạo bằng AI. Mình phụ trách định hướng nghệ thuật và dựng bộ art đồng nhất bằng AI.</div>
+          <span class="cta" data-key="w6_cta">Xem case study →</span>
+        </div>
+        <div class="tags"><span class="tag">Game</span><span class="tag">AI Art</span><span class="tag">Nông trại · Đánh quái</span></div>
+        <span class="arrow">↗</span>
+      </div>
+      <div class="work-item reveal">
+        <span class="idx">06</span>
         <div>
           <div class="title" data-key="w4_title">Onboarding ứng dụng sức khoẻ</div>
           <div class="desc" data-key="w4_desc">Thiết kế luồng onboarding thân thiện, cá nhân hoá theo mục tiêu người dùng, giúp tăng tỉ lệ giữ chân trong 7 ngày đầu.</div>
@@ -931,6 +951,157 @@ body.editing .edit-hint{display:block}
         <div class="cs-stat"><div class="n" data-key="ab_s1n">eKYC</div><div class="l" data-key="ab_s1l">định danh đầy đủ</div></div>
         <div class="cs-stat"><div class="n" data-key="ab_s2n">iOS + Android</div><div class="l" data-key="ab_s2l">nền tảng</div></div>
         <div class="cs-stat"><div class="n" data-key="ab_s3n">Từng bước</div><div class="l" data-key="ab_s3l">tiến độ rõ ràng</div></div>
+      </div>
+    </div>
+
+    <div class="cs-foot">
+      <button class="cs-close" style="position:static" type="button" data-cs-close>Đóng case study</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- CASE STUDY: MERCHANT ABBANK -->
+<div class="cs-modal" id="csMerchant">
+  <button class="cs-close" type="button" data-cs-close>Đóng ✕</button>
+  <div class="cs-inner">
+    <span class="eyebrow"><span data-key="mc_eyebrow">Case study · ABBank Merchant</span></span>
+    <h1 class="cs-title" data-key="mc_title">Merchant – ABBank</h1>
+    <p class="cs-tagline" data-key="mc_tagline">Thiết kế luồng Merchant cho ngân hàng số ABBank — nơi hộ kinh doanh có thể tự đăng ký và quản lý hồ sơ kinh doanh ngay trong app, không cần ra quầy. Case study này tập trung vào luồng đăng ký hộ kinh doanh cho khách hàng đã có căn cước công dân.</p>
+    <div class="cs-meta">
+      <span class="tag">Banking</span><span class="tag">Merchant · Hộ kinh doanh</span><span class="tag">eKYC</span><span class="tag">Mobile App</span>
+    </div>
+
+    <div class="cs-info">
+      <div class="cell"><div class="k">Vai trò</div><div class="v" data-key="mc_role">UI/UX Designer</div></div>
+      <div class="cell"><div class="k">Phạm vi</div><div class="v" data-key="mc_scope">Đăng ký &amp; sửa thông tin hộ kinh doanh</div></div>
+      <div class="cell"><div class="k">Nền tảng</div><div class="v" data-key="mc_platform">Mobile App (iOS &amp; Android)</div></div>
+    </div>
+
+    <!-- 01 CHALLENGE -->
+    <div class="cs-band">
+      <p class="cs-secnum">01 — Thách thức</p>
+      <h2 class="cs-h2" data-key="mc_h1">Đưa thủ tục mở tài khoản hộ kinh doanh lên mobile</h2>
+      <p class="cs-lead" data-key="mc_p1">Mở tài khoản cho hộ kinh doanh vốn là quy trình giấy tờ phức tạp: giấy chứng nhận đăng ký kinh doanh, thông tin pháp lý, ngành nghề, chữ ký số… Bài toán là số hoá toàn bộ trên điện thoại mà vẫn đảm bảo tính pháp lý, đồng thời giữ cho người dùng — vốn là chủ hộ kinh doanh bận rộn — luôn biết mình đang ở bước nào và cần làm gì tiếp theo.</p>
+    </div>
+
+    <!-- 02 ROLE / GOAL -->
+    <div class="cs-sec">
+      <p class="cs-secnum">02 — Vai trò &amp; mục tiêu</p>
+      <h2 class="cs-h2" data-key="mc_h2">Biến quy trình nhiều bước thành hành trình rõ ràng</h2>
+      <p class="cs-lead" data-key="mc_p2">Mình thiết kế trọn luồng đăng ký hộ kinh doanh cho khách hàng có CCCD: tận dụng bóc tách dữ liệu từ giấy tờ để giảm nhập tay, chia quy trình thành các bước có tiến độ, hướng dẫn trực quan cho thao tác khó (chụp giấy tờ, ký số), và xử lý đầy đủ trạng thái lỗi để người dùng không bế tắc giữa chừng.</p>
+    </div>
+
+    <!-- 04 KEY SCREENS -->
+    <div class="cs-sec">
+      <p class="cs-secnum">03 — Màn hình chính</p>
+      <h2 class="cs-h2" data-key="mc_h3">Luồng đăng ký hộ kinh doanh (có CCCD)</h2>
+      <p class="cs-lead" style="margin-bottom:26px" data-key="mc_p3">Toàn bộ hành trình: tải & chụp giấy chứng nhận đăng ký kinh doanh, khai báo thông tin hộ kinh doanh, ký hợp đồng bằng chữ ký số, đến xác nhận và mở tài khoản thành công — kèm các bottom sheet lựa chọn, thông báo và trạng thái lỗi/chờ duyệt thường gặp.</p>
+      <div class="ab-flow04">
+        <div class="ab-phasegroup">
+          <div class="ab-phase"><span class="ph-n">01</span><h4 data-key="mc_ph1">Giới thiệu & Giấy tờ</h4></div>
+          <div class="ab-flowrow"><div class="ab-item"><div class="ab-phone"><img src="merch-17.jpg" alt="Điểm vào Merchant" loading="lazy"></div><div class="cap"><b data-key="mc_c17">Điểm vào Merchant</b><span data-key="mc_c17d">Empty state: chưa có tài khoản HKD, mời người dùng mở tài khoản.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-18.jpg" alt="Giải pháp bán hàng" loading="lazy"></div><div class="cap"><b data-key="mc_c18">Giải pháp bán hàng</b><span data-key="mc_c18d">Trang giới thiệu giải pháp Merchant, nhận diện người đã có tài khoản HKD.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-01.jpg" alt="Mở tài khoản trong 2 bước" loading="lazy"></div><div class="cap"><b data-key="mc_c1">Mở tài khoản trong 2 bước</b><span data-key="mc_c1d">Màn giới thiệu nêu rõ 2 bước: tải hồ sơ ĐKKD và khai báo thông tin.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-02.jpg" alt="Chụp giấy chứng nhận ĐKKD" loading="lazy"></div><div class="cap"><b data-key="mc_c2">Chụp giấy chứng nhận ĐKKD</b><span data-key="mc_c2d">Khung camera căn sẵn, hướng dẫn đặt giấy tờ để chụp rõ nét.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-19.jpg" alt="Chọn ảnh từ thư viện" loading="lazy"></div><div class="cap"><b data-key="mc_c19">Chọn ảnh từ thư viện</b><span data-key="mc_c19d">Phương án khác: chọn ảnh giấy tờ có sẵn từ thư viện máy.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-03.jpg" alt="Xác nhận ảnh giấy tờ" loading="lazy"></div><div class="cap"><b data-key="mc_c3">Xác nhận ảnh giấy tờ</b><span data-key="mc_c3d">Kiểm tra lại ảnh giấy chứng nhận trước khi hệ thống bóc tách thông tin.</span></div></div></div>
+        </div>
+        <div class="ab-phasegroup">
+          <div class="ab-phase"><span class="ph-n">02</span><h4 data-key="mc_ph2">Khai báo thông tin hộ kinh doanh</h4></div>
+          <div class="ab-flowrow"><div class="ab-item"><div class="ab-phone"><img src="merch-04.jpg" alt="Thông tin hộ kinh doanh" loading="lazy"></div><div class="cap"><b data-key="mc_c4">Thông tin hộ kinh doanh</b><span data-key="mc_c4d">Tự động điền tên HKD, mã ĐKKD, địa chỉ, ngành nghề từ giấy tờ đã chụp.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-05.jpg" alt="Chọn ngành nghề kinh doanh" loading="lazy"></div><div class="cap"><b data-key="mc_c5">Chọn ngành nghề kinh doanh</b><span data-key="mc_c5d">Mở bottom sheet chọn ngành nghề, có tìm kiếm để lọc nhanh.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone scrollable"><div class="ab-scrollview"><img src="merch-20full.jpg" alt="Danh sách ngành nghề" loading="lazy"></div></div><div class="cap"><b data-key="mc_c20">Danh sách ngành nghề</b><span data-key="mc_c20d">Danh sách ngành nghề đầy đủ, chọn nhóm phù hợp với hộ kinh doanh. (cuộn để xem đầy đủ)</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-06.jpg" alt="Địa chỉ trụ sở" loading="lazy"></div><div class="cap"><b data-key="mc_c6">Địa chỉ trụ sở</b><span data-key="mc_c6d">Chọn địa chỉ theo cấp hành chính qua bottom sheet.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-21.jpg" alt="Chọn Tỉnh/Thành phố" loading="lazy"></div><div class="cap"><b data-key="mc_c21">Chọn Tỉnh/Thành phố</b><span data-key="mc_c21d">Bottom sheet chọn tỉnh/thành, có ô tìm kiếm nhanh.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-07.jpg" alt="Địa chỉ đã nhập" loading="lazy"></div><div class="cap"><b data-key="mc_c7">Địa chỉ đã nhập</b><span data-key="mc_c7d">Điền đủ tỉnh/phường/số nhà cho địa chỉ trụ sở kinh doanh.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-08.jpg" alt="Người giới thiệu" loading="lazy"></div><div class="cap"><b data-key="mc_c8">Người giới thiệu</b><span data-key="mc_c8d">Nhập SĐT/mã người giới thiệu, tự khớp tên và chi nhánh hỗ trợ.</span></div></div></div>
+        </div>
+        <div class="ab-phasegroup">
+          <div class="ab-phase"><span class="ph-n">03</span><h4 data-key="mc_ph3">Chữ ký số & Xác nhận</h4></div>
+          <div class="ab-flowrow"><div class="ab-item"><div class="ab-phone scrollable"><div class="ab-scrollview"><img src="merch-09full.jpg" alt="Tạo chữ ký số" loading="lazy"></div></div><div class="cap"><b data-key="mc_c9">Tạo chữ ký số</b><span data-key="mc_c9d">Rà soát thông tin và ký hợp đồng mở tài khoản bằng chữ ký số. (cuộn để xem đầy đủ)</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-10.jpg" alt="Xác nhận OTP chữ ký số" loading="lazy"></div><div class="cap"><b data-key="mc_c10">Xác nhận OTP chữ ký số</b><span data-key="mc_c10d">Nhập OTP từ đối tác để xác thực và tạo chữ ký số.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-11.jpg" alt="Tạo chữ ký số thành công" loading="lazy"></div><div class="cap"><b data-key="mc_c11">Tạo chữ ký số thành công</b><span data-key="mc_c11d">Phản hồi tích cực, sẵn sàng bước xác nhận cuối.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-22.jpg" alt="Tạo chữ ký số thất bại" loading="lazy"></div><div class="cap"><b data-key="mc_c22">Tạo chữ ký số thất bại</b><span data-key="mc_c22d">Xử lý khi tạo chữ ký số không thành công, cho phép thử lại.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone scrollable"><div class="ab-scrollview"><img src="merch-12full.jpg" alt="Xác nhận mở tài khoản" loading="lazy"></div></div><div class="cap"><b data-key="mc_c12">Xác nhận mở tài khoản</b><span data-key="mc_c12d">Tổng hợp thông tin HKD, đại diện pháp luật và hợp đồng ký số. (cuộn để xem đầy đủ)</span></div></div></div>
+        </div>
+        <div class="ab-phasegroup">
+          <div class="ab-phase"><span class="ph-n">04</span><h4 data-key="mc_ph4">Hoàn tất</h4></div>
+          <div class="ab-flowrow"><div class="ab-item"><div class="ab-phone"><img src="merch-13.jpg" alt="Mở tài khoản thành công" loading="lazy"></div><div class="cap"><b data-key="mc_c13">Mở tài khoản thành công</b><span data-key="mc_c13d">Màn chúc mừng, dẫn tới xem thông tin tài khoản hoặc về trang chủ.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-14.jpg" alt="Chi tiết tài khoản HKD" loading="lazy"></div><div class="cap"><b data-key="mc_c14">Chi tiết tài khoản HKD</b><span data-key="mc_c14d">Hiển thị số tài khoản thanh toán và thông tin hộ kinh doanh vừa mở.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-23.jpg" alt="Danh sách tài khoản" loading="lazy"></div><div class="cap"><b data-key="mc_c23">Danh sách tài khoản</b><span data-key="mc_c23d">Tài khoản HKD hiển thị cùng tài khoản thanh toán trong danh mục.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-24.jpg" alt="Thông báo hoàn tất" loading="lazy"></div><div class="cap"><b data-key="mc_c24">Thông báo hoàn tất</b><span data-key="mc_c24d">Trung tâm thông báo xác nhận đã đăng ký và mở tài khoản HKD thành công.</span></div></div></div>
+        </div>
+        <div class="ab-phasegroup">
+          <div class="ab-phase"><span class="ph-n">05</span><h4 data-key="mc_ph5">Trạng thái lỗi & chờ duyệt</h4></div>
+          <div class="ab-flowrow"><div class="ab-item"><div class="ab-phone"><img src="merch-15.jpg" alt="Lỗi hệ thống" loading="lazy"></div><div class="cap"><b data-key="mc_c15">Lỗi hệ thống</b><span data-key="mc_c15d">Thông báo gián đoạn kèm mã lỗi, hướng dẫn thử lại sau.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-16.jpg" alt="Hết thời gian chờ" loading="lazy"></div><div class="cap"><b data-key="mc_c16">Hết thời gian chờ</b><span data-key="mc_c16d">Xử lý khi API quá thời gian phản hồi, tránh treo màn cho người dùng.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-25.jpg" alt="Mất kết nối internet" loading="lazy"></div><div class="cap"><b data-key="mc_c25">Mất kết nối internet</b><span data-key="mc_c25d">Thông báo mất kết nối, hướng dẫn kiểm tra mạng và thử lại.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-26.jpg" alt="Hồ sơ chờ phê duyệt" loading="lazy"></div><div class="cap"><b data-key="mc_c26">Hồ sơ chờ phê duyệt</b><span data-key="mc_c26d">Thông báo hồ sơ chưa được phê duyệt, cần bổ sung hoặc chờ xử lý.</span></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 EDIT FLOW -->
+    <div class="cs-sec">
+      <p class="cs-secnum">04 — Sửa thông tin hộ kinh doanh</p>
+      <h2 class="cs-h2" data-key="mc_h5">Luồng cập nhật thông tin hộ kinh doanh</h2>
+      <p class="cs-lead" style="margin-bottom:26px" data-key="mc_p5">Sau khi mở tài khoản, chủ hộ kinh doanh có thể tự cập nhật thông tin ngay trong app: từ tài khoản → chọn trường cần sửa (tên, địa chỉ, ngành nghề…) → xác nhận &amp; ký → chờ ngân hàng phê duyệt, kèm các trạng thái từ chối và lỗi.</p>
+      <div class="ab-flow04">
+        <div class="ab-phasegroup">
+          <div class="ab-phase"><span class="ph-n">A</span><h4 data-key="mc_ph6">Vào tài khoản hộ kinh doanh</h4></div>
+          <div class="ab-flowrow"><div class="ab-item"><div class="ab-phone scrollable"><div class="ab-scrollview"><img src="merch-27full.jpg" alt="Danh sách tài khoản" loading="lazy"></div></div><div class="cap"><b data-key="mc_c27">Danh sách tài khoản</b><span data-key="mc_c27d">Chọn tài khoản HKD trong danh mục Tài khoản / Thẻ / Tích luỹ. (cuộn để xem đầy đủ)</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone scrollable"><div class="ab-scrollview"><img src="merch-28full.jpg" alt="Chi tiết tài khoản HKD" loading="lazy"></div></div><div class="cap"><b data-key="mc_c28">Chi tiết tài khoản HKD</b><span data-key="mc_c28d">Xem chi tiết tài khoản HKD đang hoạt động, mở tuỳ chọn cập nhật. (cuộn để xem đầy đủ)</span></div></div></div>
+        </div>
+        <div class="ab-phasegroup">
+          <div class="ab-phase"><span class="ph-n">B</span><h4 data-key="mc_ph7">Cập nhật thông tin</h4></div>
+          <div class="ab-flowrow"><div class="ab-item"><div class="ab-phone"><img src="merch-29.jpg" alt="Cập nhật thông tin HKD" loading="lazy"></div><div class="cap"><b data-key="mc_c29">Cập nhật thông tin HKD</b><span data-key="mc_c29d">Màn tổng hợp thông tin hiện tại, cho phép sửa từng phần.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-30.jpg" alt="Sửa các trường thông tin" loading="lazy"></div><div class="cap"><b data-key="mc_c30">Sửa các trường thông tin</b><span data-key="mc_c30d">Chỉnh các trường: mã ĐKKD, địa chỉ, ngành nghề, ngày cấp.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-31.jpg" alt="Thay đổi tên hộ kinh doanh" loading="lazy"></div><div class="cap"><b data-key="mc_c31">Thay đổi tên hộ kinh doanh</b><span data-key="mc_c31d">Cập nhật tên HKD với dữ liệu mới.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-32.jpg" alt="Nhập tên hộ kinh doanh" loading="lazy"></div><div class="cap"><b data-key="mc_c32">Nhập tên hộ kinh doanh</b><span data-key="mc_c32d">Bàn phím nhập tên HKD, kiểm tra realtime.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-33.jpg" alt="Địa chỉ trụ sở" loading="lazy"></div><div class="cap"><b data-key="mc_c33">Địa chỉ trụ sở</b><span data-key="mc_c33d">Chọn lại địa chỉ trụ sở theo cấp hành chính.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-34.jpg" alt="Địa chỉ đã cập nhật" loading="lazy"></div><div class="cap"><b data-key="mc_c34">Địa chỉ đã cập nhật</b><span data-key="mc_c34d">Xác nhận địa chỉ mới sau khi chỉnh sửa.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone scrollable"><div class="ab-scrollview"><img src="merch-35full.jpg" alt="Chọn ngành nghề" loading="lazy"></div></div><div class="cap"><b data-key="mc_c35">Chọn ngành nghề</b><span data-key="mc_c35d">Cập nhật lại ngành nghề kinh doanh từ danh sách đầy đủ. (cuộn để xem đầy đủ)</span></div></div></div>
+        </div>
+        <div class="ab-phasegroup">
+          <div class="ab-phase"><span class="ph-n">C</span><h4 data-key="mc_ph8">Xác nhận & Phê duyệt</h4></div>
+          <div class="ab-flowrow"><div class="ab-item"><div class="ab-phone scrollable"><div class="ab-scrollview"><img src="merch-36full.jpg" alt="Xác nhận cập nhật" loading="lazy"></div></div><div class="cap"><b data-key="mc_c36">Xác nhận cập nhật</b><span data-key="mc_c36d">Rà soát toàn bộ thay đổi và giấy đề nghị trước khi gửi. (cuộn để xem đầy đủ)</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-37.jpg" alt="Xác thực sinh trắc" loading="lazy"></div><div class="cap"><b data-key="mc_c37">Xác thực sinh trắc</b><span data-key="mc_c37d">Xác thực bằng vân tay/khuôn mặt để ký yêu cầu cập nhật.</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone scrollable"><div class="ab-scrollview"><img src="merch-38full.jpg" alt="Đang chờ phê duyệt" loading="lazy"></div></div><div class="cap"><b data-key="mc_c38">Đang chờ phê duyệt</b><span data-key="mc_c38d">Hồ sơ cập nhật đã gửi, theo dõi trạng thái chờ ngân hàng duyệt. (cuộn để xem đầy đủ)</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-39.jpg" alt="Cập nhật thành công" loading="lazy"></div><div class="cap"><b data-key="mc_c39">Cập nhật thành công</b><span data-key="mc_c39d">Yêu cầu được duyệt, thông tin HKD đã thay đổi.</span></div></div></div>
+        </div>
+        <div class="ab-phasegroup">
+          <div class="ab-phase"><span class="ph-n">D</span><h4 data-key="mc_ph9">Từ chối & Lỗi</h4></div>
+          <div class="ab-flowrow"><div class="ab-item"><div class="ab-phone scrollable"><div class="ab-scrollview"><img src="merch-40full.jpg" alt="Hồ sơ chưa được duyệt" loading="lazy"></div></div><div class="cap"><b data-key="mc_c40">Hồ sơ chưa được duyệt</b><span data-key="mc_c40d">Thông báo hồ sơ chưa được phê duyệt kèm lý do. (cuộn để xem đầy đủ)</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone scrollable"><div class="ab-scrollview"><img src="merch-41full.jpg" alt="Từ chối yêu cầu cập nhật" loading="lazy"></div></div><div class="cap"><b data-key="mc_c41">Từ chối yêu cầu cập nhật</b><span data-key="mc_c41d">Ngân hàng từ chối yêu cầu cập nhật, hướng dẫn bước tiếp theo. (cuộn để xem đầy đủ)</span></div></div><div class="ab-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="ab-item"><div class="ab-phone"><img src="merch-42.jpg" alt="Mất kết nối hệ thống" loading="lazy"></div><div class="cap"><b data-key="mc_c42">Mất kết nối hệ thống</b><span data-key="mc_c42d">Thông báo gián đoạn kết nối kèm mã lỗi, cho thử lại.</span></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 OUTCOME -->
+    <div class="cs-sec">
+      <p class="cs-secnum">05 — Kết quả</p>
+      <h2 class="cs-h2" data-key="mc_h4">Đăng ký hộ kinh doanh ngay trên app</h2>
+      <div class="cs-stats">
+        <div class="cs-stat"><div class="n" data-key="mc_s1n">2 bước</div><div class="l" data-key="mc_s1l">tải hồ sơ &amp; khai báo</div></div>
+        <div class="cs-stat"><div class="n" data-key="mc_s2n">Chữ ký số</div><div class="l" data-key="mc_s2l">ký hợp đồng điện tử</div></div>
+        <div class="cs-stat"><div class="n" data-key="mc_s3n">Có CCCD</div><div class="l" data-key="mc_s3l">định danh sẵn, ít nhập tay</div></div>
+      </div>
+    </div>
+
+    <div class="cs-foot">
+      <button class="cs-close" style="position:static" type="button" data-cs-close>Đóng case study</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- CASE STUDY: GREENLAND GAME -->
+<div class="cs-modal" id="csGreenland">
+  <button class="cs-close" type="button" data-cs-close>Đóng ✕</button>
+  <div class="cs-inner">
+    <span class="eyebrow"><span data-key="gr_eyebrow">Case study · Game</span></span>
+    <h1 class="cs-title" data-key="gr_title">Greenland</h1>
+    <p class="cs-tagline" data-key="gr_tagline">Một game nông trại pha yếu tố đánh quái — nơi người chơi vừa gieo trồng, thu hoạch, xây dựng nông trại, vừa chiến đấu với quái vật. Toàn bộ hình ảnh trong game được tạo bằng AI.</p>
+    <div class="cs-meta">
+      <span class="tag">Game</span><span class="tag">AI-generated Art</span><span class="tag">Nông trại</span><span class="tag">Đánh quái</span>
+    </div>
+
+    <div class="cs-info">
+      <div class="cell"><div class="k">Vai trò</div><div class="v" data-key="gr_role">Art Direction · AI-driven design</div></div>
+      <div class="cell"><div class="k">Thể loại</div><div class="v" data-key="gr_genre">Nông trại + Đánh quái</div></div>
+      <div class="cell"><div class="k">Công cụ</div><div class="v" data-key="gr_tool">AI image generation + hậu kỳ</div></div>
+    </div>
+
+    <!-- 01 ABOUT -->
+    <div class="cs-band">
+      <p class="cs-secnum">01 — Về game</p>
+      <h2 class="cs-h2" data-key="gr_h1">Nông trại thư giãn, chiến đấu kịch tính</h2>
+      <p class="cs-lead" data-key="gr_p1">Greenland kết hợp hai vòng lặp: xây dựng &amp; chăm sóc nông trại (gieo trồng, thu hoạch, nâng cấp) và chiến đấu đánh quái để bảo vệ vùng đất. Hướng nghệ thuật cần vừa dễ thương, ấm áp cho phần nông trại, vừa đủ sức mạnh và tương phản cho phần combat — nhưng vẫn thống nhất trong một thế giới.</p>
+    </div>
+
+    <!-- 02 AI ART PIPELINE -->
+    <div class="cs-sec">
+      <p class="cs-secnum">02 — Dùng AI tạo toàn bộ hình ảnh</p>
+      <h2 class="cs-h2" data-key="gr_h2">Quy trình dựng art bằng AI</h2>
+      <p class="cs-lead" data-key="gr_p2">Toàn bộ asset hình ảnh — nhân vật, cây trồng, vật phẩm, quái vật, môi trường và UI — được tạo bằng AI: xây style reference &amp; prompt chuẩn cho từng nhóm asset, lặp nhiều biến thể rồi chọn lọc, và hậu kỳ (tách nền, chỉnh màu, ghép bộ) để đảm bảo tính đồng nhất. Cách làm này giúp dựng một thư viện art lớn, đồng bộ trong thời gian ngắn.</p>
+    </div>
+
+    <!-- 03 GALLERY (placeholder) -->
+    <div class="cs-sec">
+      <p class="cs-secnum">03 — Hình ảnh trong game</p>
+      <h2 class="cs-h2" data-key="gr_h3">Thư viện hình ảnh</h2>
+      <p class="cs-lead" style="margin-bottom:22px" data-key="gr_p3">Bộ hình ảnh AI của Greenland: nhân vật, quái vật, cây trồng, vật phẩm và bối cảnh. (Khu vực gallery — sẽ cập nhật ảnh thật.)</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+        <div class="cs-ph" style="aspect-ratio:1/1"><span>Hình ảnh game<br>(đang cập nhật)</span></div><div class="cs-ph" style="aspect-ratio:1/1"><span>Hình ảnh game<br>(đang cập nhật)</span></div><div class="cs-ph" style="aspect-ratio:1/1"><span>Hình ảnh game<br>(đang cập nhật)</span></div><div class="cs-ph" style="aspect-ratio:1/1"><span>Hình ảnh game<br>(đang cập nhật)</span></div><div class="cs-ph" style="aspect-ratio:1/1"><span>Hình ảnh game<br>(đang cập nhật)</span></div><div class="cs-ph" style="aspect-ratio:1/1"><span>Hình ảnh game<br>(đang cập nhật)</span></div>
       </div>
     </div>
 
