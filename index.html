@@ -352,6 +352,34 @@ img.cs-img{width:100%;display:block;border:1px solid var(--line);border-radius:1
 .proc .n{font-family:var(--font-mono);font-size:12px;color:var(--accent)}
 .proc h3{font-size:1.15rem;font-weight:700;margin:14px 0 10px}
 .proc p{color:var(--muted);font-size:14px;margin:0}
+/* ---------- collaboration flow timeline ---------- */
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:22px;position:relative}
+.flow-step{position:relative;padding-top:48px}
+.flow-step::before{content:"";position:absolute;top:15px;left:0;right:0;height:2px;background:var(--line-2)}
+.flow-step:first-child::before{left:calc(50% - 1px)}
+.flow-step:last-child::before{right:calc(50% - 1px)}
+.fs-node{position:absolute;top:0;left:50%;transform:translateX(-50%);width:32px;height:32px;border-radius:50%;background:var(--accent);color:#160b08;font:800 12px/32px var(--font-mono);text-align:center;box-shadow:0 0 0 6px var(--bg)}
+.fs-title{font-size:1rem;font-weight:700;margin:0 0 11px;line-height:1.25}
+.fs-roles{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.role{display:inline-flex;align-items:center;gap:5px;font:600 10px/1 var(--font-mono);letter-spacing:.04em;padding:5px 8px;border-radius:6px;border:1px solid}
+.role::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.r-pm{color:#FF7A5C;background:rgba(255,90,54,.1);border-color:rgba(255,90,54,.32)}
+.r-ba{color:#A99BFF;background:rgba(139,124,255,.12);border-color:rgba(139,124,255,.34)}
+.r-dev{color:#4FDECE;background:rgba(53,208,192,.1);border-color:rgba(53,208,192,.32)}
+.r-test{color:#FFC24D;background:rgba(255,176,32,.1);border-color:rgba(255,176,32,.32)}
+.r-design{color:#C7EF6A;background:rgba(182,240,60,.1);border-color:rgba(182,240,60,.32)}
+.fs-desc{color:var(--muted);font-size:13.5px;line-height:1.5;margin:0 0 12px}
+.fs-out{font-family:var(--font-mono);font-size:11px;color:var(--muted-2);line-height:1.45;border-top:1px dashed var(--line-2);padding-top:10px}
+.fs-out b{color:var(--text);font-weight:500}
+@media (max-width:1179px){
+  .flow{grid-template-columns:1fr;gap:0}
+  .flow-step{padding-top:0;padding-left:46px;padding-bottom:30px}
+  .flow-step::before{top:0;bottom:0;left:15px;right:auto;width:2px;height:auto}
+  .flow-step:first-child::before{top:16px;left:15px;right:auto}
+  .flow-step:last-child::before{bottom:auto;height:16px;left:15px;right:auto}
+  .fs-node{top:0;left:0;transform:none}
+  .fs-desc{max-width:52ch}
+}
 
 /* ---------- contact ---------- */
 .contact{text-align:center}
@@ -658,6 +686,60 @@ body.editing .edit-hint{display:block}
   </div>
 </section>
 
+<!-- COLLAB FLOW -->
+<section class="section" id="collab">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span data-key="flow_eyebrow">Phối hợp</span></span>
+      <h2 data-key="flow_title" style="font-size:clamp(2rem,5vw,3.4rem)">Phối hợp nhịp nhàng với mọi bên.</h2>
+    </div>
+    <div class="flow">
+      <div class="flow-step reveal">
+        <div class="fs-node">01</div>
+        <h3 class="fs-title">Nhận yêu cầu</h3>
+        <div class="fs-roles"><span class="role r-design">Design</span><span class="role r-pm">PM</span></div>
+        <p class="fs-desc">Tiếp nhận brief, mục tiêu sản phẩm, phạm vi & timeline.</p>
+        <div class="fs-out">Đầu ra: <b>Thống nhất scope & deadline</b></div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="fs-node">02</div>
+        <h3 class="fs-title">Phân tích & làm rõ</h3>
+        <div class="fs-roles"><span class="role r-design">Design</span><span class="role r-ba">BA</span><span class="role r-pm">PM</span></div>
+        <p class="fs-desc">Bóc tách requirement, user flow, các trường hợp biên/nghiệp vụ.</p>
+        <div class="fs-out">Đầu ra: <b>User flow, danh sách màn hình</b></div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="fs-node">03</div>
+        <h3 class="fs-title">Nghiên cứu & wireframe</h3>
+        <div class="fs-roles"><span class="role r-design">Design</span><span class="role r-ba">BA</span></div>
+        <p class="fs-desc">Research nhanh, phác thảo bố cục low-fi, chốt luồng.</p>
+        <div class="fs-out">Đầu ra: <b>Wireframe, luồng đã duyệt</b></div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="fs-node">04</div>
+        <h3 class="fs-title">Thiết kế UI & prototype</h3>
+        <div class="fs-roles"><span class="role r-design">Design</span><span class="role r-pm">PM</span></div>
+        <p class="fs-desc">Dựng hi-fi theo design system, prototype tương tác.</p>
+        <div class="fs-out">Đầu ra: <b>UI hoàn thiện, prototype</b></div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="fs-node">05</div>
+        <h3 class="fs-title">Bàn giao & hỗ trợ Dev</h3>
+        <div class="fs-roles"><span class="role r-design">Design</span><span class="role r-dev">Dev</span></div>
+        <p class="fs-desc">Handoff spec, thông số, giải đáp trong lúc code.</p>
+        <div class="fs-out">Đầu ra: <b>File bàn giao, spec/redline</b></div>
+      </div>
+      <div class="flow-step reveal">
+        <div class="fs-node">06</div>
+        <h3 class="fs-title">Kiểm thử & hoàn thiện</h3>
+        <div class="fs-roles"><span class="role r-design">Design</span><span class="role r-test">Test</span><span class="role r-dev">Dev</span></div>
+        <p class="fs-desc">Đối chiếu UI thực tế, review cùng QA, chỉnh sửa trước release.</p>
+        <div class="fs-out">Đầu ra: <b>Bản build đạt chuẩn, release</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section class="section contact" id="contact">
   <div class="wrap">
@@ -665,10 +747,10 @@ body.editing .edit-hint{display:block}
     <h2><span data-key="contact_pre">Cùng tạo nên</span><br><a href="#" data-key="contact_link">điều gì đó tuyệt vời</a><span data-key="contact_post"> nhé?</span></h2>
     <p class="sub" data-key="contact_sub">Mình luôn sẵn sàng cho những dự án thú vị và cơ hội hợp tác. Gửi mình vài dòng nhé.</p>
     <div class="socials">
-      <a href="mailto:buimanhdung999@gmail.com" target="_blank" rel="noopener" data-key="soc_email">✉ buimanhdung999@gmail.com</a>
-      <a href="tel:+84969102712" target="_blank" rel="noopener" data-key="soc_phone">☎ 0969 102 712</a>
-      <a href="https://www.facebook.com/profile.php?id=100036142222159" target="_blank" rel="noopener" data-key="soc_facebook">f / Facebook · Thợ Vẽ Giao Diện</a>
-      <a href="cv.pdf" target="_blank" rel="noopener" data-key="soc_cv">▤ Xem CV (PDF)</a>
+      <a href="mailto:buimanhdung999@gmail.com" data-key="soc_email">Email / buimanhdung999@gmail.com</a>
+      <a href="tel:+84969102712" data-key="soc_phone">Phone / 0969102712</a>
+      <a href="https://www.facebook.com/profile.php?id=100036142222159" target="_blank" rel="noopener" data-key="soc_facebook">Facebook / Thợ Vẽ Giao Diện</a>
+      <a href="cv.pdf" target="_blank" rel="noopener" data-key="soc_cv">Xem CV (PDF)</a>
     </div>
   </div>
 </section>
